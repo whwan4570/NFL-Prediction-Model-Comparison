@@ -1,4 +1,4 @@
-Model Comparison: PyTorch vs TensorFlow
+## Model Comparison: PyTorch vs TensorFlow
 
 This project compares PyTorch and TensorFlow implementations of a structurally equivalent GRU-based encoder–decoder model for NFL player trajectory prediction.
 
@@ -6,7 +6,7 @@ Both models share identical architectures (2-layer GRU encoder–decoder), param
 
 Despite this, their autoregressive inference behavior diverges significantly.
 
-Key Results
+## Key Results
 
 Validation RMSE
 
@@ -22,7 +22,7 @@ Max gap: 79.32 yards
 
 Low inter-model correlation (x: 0.27, y: 0.50)
 
-Interpretation
+## Interpretation
 
 The divergence is consistent with known sequence modeling issues:
 
@@ -34,7 +34,7 @@ Error accumulation over long horizons (He et al., 2020)
 
 These results highlight that structural equivalence does not guarantee functional equivalence in autoregressive sequence models.
 
-References
+## References
 
 Bengio et al., Scheduled Sampling for Sequence Prediction with RNNs, NeurIPS 2015
 
